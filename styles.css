@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  /* colors */
+
+  --Bright-Blue: hsl(220, 98%, 61%);
+  /* --Check-Background:linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%); */
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+  --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
+  /* ### Dark Theme */
+
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  /* --Light-Grayish-Blue (hover): hsl(236, 33%, 92%); */
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayis-Blue: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+
+  /* fonts */
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  --prim-font: 400;
+  --sec-font: 700;
+}
+
+/* reset */
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+}
+
+body {
+  line-height: 1.6;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* reset END*/
+.container {
+  padding: 1rem 1rem;
+}
+header {
+  position: relative;
+}
+/* todo section here */
+.todo-section {
+  background-image: url(./images/bg-mobile-light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+.todo-section span {
+  font-size: larger;
+  color: white;
+  letter-spacing: 0.5rem;
+  font-weight: var(--sec-font);
+}
+.todo-section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+#moon {
+  float: right;
+}
+.custom-radio {
+  display: inline-block;
+  border: 0.1rem solid var(--Light-Grayish-Blue);
+  border-radius: 50% 50% 50% 50%;
+  background: white;
+  position: absolute;
+  margin-left: 1.5rem;
+  padding: 7px;
+}
+.custom-radio-click {
+  display: inline-block;
+  border: 0.1rem solid var(--Light-Grayish-Blue);
+  border-radius: 50% 50% 50% 50%;
+  background: linear-gradient(#57ddff, #c058f3);
+  position: absolute;
+  margin-left: 0.5rem;
+  padding: 7px;
+}
+.todo-new-item {
+  width: 100%;
+  padding: 1rem 3.5rem;
+  border-radius: 0.4rem;
+  border: none;
+  color: var(--Very-Dark-Grayis-Blue);
+  font-weight: var(--prim-font);
+  word-spacing: 0.2rem;
+}
+.add {
+  position: absolute;
+  margin-left: 85%;
+  transform: rotateZ(45deg);  
+  cursor: pointer;
+}
+/* list starts here */
+.list-card {
+  position: relative;
+  transform: translateY(-2.8rem);
+  border-radius: 0.4rem;
+}
+.list-item {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  color: var(--Dark-Grayish-Blue);
+  border-bottom: 0.1rem solid var(--Dark-Grayish-Blue);
+}
+.item-custom-radio {
+  display: inline-block;
+  border: 0.1rem solid var(--Light-Grayish-Blue);
+  border-radius: 50% 50% 50% 50%;
+  background: white;
+  position: absolute;
+  margin-left: 1.5rem;
+  padding: 7px;
+}
+.cross {
+  margin-right: 1rem;
+}
+.bottom-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: none;
+  box-shadow: 0 14px 6px -6px grey;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0rem;
+  padding: 1rem 6rem;
+  box-shadow: 0 14px 6px -6px grey;
+}
+footer {
+  text-align: center;
+}
+.display{
+  display:none;
+}
